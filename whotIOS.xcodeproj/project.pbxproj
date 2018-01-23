@@ -14,6 +14,9 @@
 		06E1EF881FF3662A00655FA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E1EF861FF3662A00655FA6 /* LaunchScreen.storyboard */; };
 		06E1EF931FF3662A00655FA6 /* whotIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E1EF921FF3662A00655FA6 /* whotIOSTests.swift */; };
 		06E1EF9E1FF3662A00655FA6 /* whotIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E1EF9D1FF3662A00655FA6 /* whotIOSUITests.swift */; };
+		A9B22F5BE064C6A1F2D364D2 /* Pods_whotIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F5C8CD3A695BCB0010A457 /* Pods_whotIOSTests.framework */; };
+		AD9DE28784674EC87C31E3D3 /* Pods_whotIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F53181A24A3F71CA19018D /* Pods_whotIOSUITests.framework */; };
+		EBA0AA37A792F99B8CBDAD07 /* Pods_whotIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12186ACE6310FCCB873E540 /* Pods_whotIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		06E1EF991FF3662A00655FA6 /* whotIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whotIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E1EF9D1FF3662A00655FA6 /* whotIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whotIOSUITests.swift; sourceTree = "<group>"; };
 		06E1EF9F1FF3662A00655FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		197CCDCFBA4C4F3F0EBB76CF /* Pods-whotIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whotIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-whotIOS/Pods-whotIOS.release.xcconfig"; sourceTree = "<group>"; };
+		6E075000F6D972AD698D32C5 /* Pods-whotIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whotIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-whotIOSUITests/Pods-whotIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		78F5C8CD3A695BCB0010A457 /* Pods_whotIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whotIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED6921AB71EEEAB5AFDB214 /* Pods-whotIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whotIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whotIOSUITests/Pods-whotIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B12186ACE6310FCCB873E540 /* Pods_whotIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whotIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F53181A24A3F71CA19018D /* Pods_whotIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whotIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B626B04AB9D68541A906711A /* Pods-whotIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whotIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whotIOS/Pods-whotIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C3BBDB85434546261592A369 /* Pods-whotIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whotIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whotIOSTests/Pods-whotIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F384DB54580FE7C638A28A27 /* Pods-whotIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whotIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-whotIOSTests/Pods-whotIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBA0AA37A792F99B8CBDAD07 /* Pods_whotIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B22F5BE064C6A1F2D364D2 /* Pods_whotIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9DE28784674EC87C31E3D3 /* Pods_whotIOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				06E1EF911FF3662A00655FA6 /* whotIOSTests */,
 				06E1EF9C1FF3662A00655FA6 /* whotIOSUITests */,
 				06E1EF7B1FF3662A00655FA6 /* Products */,
+				DB998BD106DDA8F03F68E97E /* Pods */,
+				DCA5F5855C1D25ACCBAA0BBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +158,29 @@
 			path = main;
 			sourceTree = "<group>";
 		};
+		DB998BD106DDA8F03F68E97E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B626B04AB9D68541A906711A /* Pods-whotIOS.debug.xcconfig */,
+				197CCDCFBA4C4F3F0EBB76CF /* Pods-whotIOS.release.xcconfig */,
+				C3BBDB85434546261592A369 /* Pods-whotIOSTests.debug.xcconfig */,
+				F384DB54580FE7C638A28A27 /* Pods-whotIOSTests.release.xcconfig */,
+				7ED6921AB71EEEAB5AFDB214 /* Pods-whotIOSUITests.debug.xcconfig */,
+				6E075000F6D972AD698D32C5 /* Pods-whotIOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCA5F5855C1D25ACCBAA0BBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B12186ACE6310FCCB873E540 /* Pods_whotIOS.framework */,
+				78F5C8CD3A695BCB0010A457 /* Pods_whotIOSTests.framework */,
+				B5F53181A24A3F71CA19018D /* Pods_whotIOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06E1EFA21FF3662A00655FA6 /* Build configuration list for PBXNativeTarget "whotIOS" */;
 			buildPhases = (
+				D8B2824C6EB11B12F1094361 /* [CP] Check Pods Manifest.lock */,
 				06E1EF761FF3662A00655FA6 /* Sources */,
 				06E1EF771FF3662A00655FA6 /* Frameworks */,
 				06E1EF781FF3662A00655FA6 /* Resources */,
+				785726E7E6FC085C6ED58DE0 /* [CP] Embed Pods Frameworks */,
+				3932A61FBF43A94C308BBA48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06E1EFA51FF3662A00655FA6 /* Build configuration list for PBXNativeTarget "whotIOSTests" */;
 			buildPhases = (
+				90225D2D38629B4709632242 /* [CP] Check Pods Manifest.lock */,
 				06E1EF8A1FF3662A00655FA6 /* Sources */,
 				06E1EF8B1FF3662A00655FA6 /* Frameworks */,
 				06E1EF8C1FF3662A00655FA6 /* Resources */,
+				99800BC1EA829DED2B9904BD /* [CP] Embed Pods Frameworks */,
+				7A461ADED0F35B506A989950 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06E1EFA81FF3662A00655FA6 /* Build configuration list for PBXNativeTarget "whotIOSUITests" */;
 			buildPhases = (
+				C0F28B12671B90734C7B7D7D /* [CP] Check Pods Manifest.lock */,
 				06E1EF951FF3662A00655FA6 /* Sources */,
 				06E1EF961FF3662A00655FA6 /* Frameworks */,
 				06E1EF971FF3662A00655FA6 /* Resources */,
+				10B0AD164984A1C5999C80DC /* [CP] Embed Pods Frameworks */,
+				F3665AC84609395CC6413862 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +318,171 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10B0AD164984A1C5999C80DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whotIOSUITests/Pods-whotIOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3932A61FBF43A94C308BBA48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whotIOS/Pods-whotIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		785726E7E6FC085C6ED58DE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-whotIOS/Pods-whotIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whotIOS/Pods-whotIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A461ADED0F35B506A989950 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whotIOSTests/Pods-whotIOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90225D2D38629B4709632242 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whotIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99800BC1EA829DED2B9904BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-whotIOSTests/Pods-whotIOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whotIOSTests/Pods-whotIOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0F28B12671B90734C7B7D7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whotIOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8B2824C6EB11B12F1094361 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whotIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3665AC84609395CC6413862 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whotIOSUITests/Pods-whotIOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		06E1EF761FF3662A00655FA6 /* Sources */ = {
@@ -440,6 +654,7 @@
 		};
 		06E1EFA31FF3662A00655FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B626B04AB9D68541A906711A /* Pods-whotIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +670,7 @@
 		};
 		06E1EFA41FF3662A00655FA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 197CCDCFBA4C4F3F0EBB76CF /* Pods-whotIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +686,7 @@
 		};
 		06E1EFA61FF3662A00655FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3BBDB85434546261592A369 /* Pods-whotIOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +704,7 @@
 		};
 		06E1EFA71FF3662A00655FA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F384DB54580FE7C638A28A27 /* Pods-whotIOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +722,7 @@
 		};
 		06E1EFA91FF3662A00655FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED6921AB71EEEAB5AFDB214 /* Pods-whotIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,6 +739,7 @@
 		};
 		06E1EFAA1FF3662A00655FA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E075000F6D972AD698D32C5 /* Pods-whotIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
