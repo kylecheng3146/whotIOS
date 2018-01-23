@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061BE39120171B0E0057B6FE /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061BE39020171B0E0057B6FE /* CommonUtils.swift */; };
+		061BE39320171B400057B6FE /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061BE39220171B400057B6FE /* MainPresenter.swift */; };
+		061BE39620171C760057B6FE /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061BE39520171C760057B6FE /* MainModel.swift */; };
 		06E1EF7E1FF3662A00655FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E1EF7D1FF3662A00655FA6 /* AppDelegate.swift */; };
 		06E1EF801FF3662A00655FA6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E1EF7F1FF3662A00655FA6 /* MainController.swift */; };
 		06E1EF831FF3662A00655FA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E1EF811FF3662A00655FA6 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061BE39020171B0E0057B6FE /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		061BE39220171B400057B6FE /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		061BE39520171C760057B6FE /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		06E1EF7A1FF3662A00655FA6 /* whotIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whotIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E1EF7D1FF3662A00655FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06E1EF7F1FF3662A00655FA6 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -89,6 +95,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061BE38F20171AF70057B6FE /* util */ = {
+			isa = PBXGroup;
+			children = (
+				061BE39020171B0E0057B6FE /* CommonUtils.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		061BE39420171C680057B6FE /* data */ = {
+			isa = PBXGroup;
+			children = (
+				061BE39520171C760057B6FE /* MainModel.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		06E1EF711FF3662A00655FA6 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +136,8 @@
 		06E1EF7C1FF3662A00655FA6 /* whotIOS */ = {
 			isa = PBXGroup;
 			children = (
+				061BE39420171C680057B6FE /* data */,
+				061BE38F20171AF70057B6FE /* util */,
 				06E1EFAB1FF3663000655FA6 /* ui */,
 				06E1EF7D1FF3662A00655FA6 /* AppDelegate.swift */,
 				06E1EF841FF3662A00655FA6 /* Assets.xcassets */,
@@ -154,6 +178,7 @@
 			children = (
 				06E1EF7F1FF3662A00655FA6 /* MainController.swift */,
 				06E1EF811FF3662A00655FA6 /* Main.storyboard */,
+				061BE39220171B400057B6FE /* MainPresenter.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -362,6 +387,7 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -370,6 +396,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -490,7 +517,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				06E1EF801FF3662A00655FA6 /* MainController.swift in Sources */,
+				061BE39120171B0E0057B6FE /* CommonUtils.swift in Sources */,
 				06E1EF7E1FF3662A00655FA6 /* AppDelegate.swift in Sources */,
+				061BE39620171C760057B6FE /* MainModel.swift in Sources */,
+				061BE39320171B400057B6FE /* MainPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
