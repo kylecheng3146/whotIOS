@@ -10,6 +10,10 @@
 		061BE39120171B0E0057B6FE /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061BE39020171B0E0057B6FE /* CommonUtils.swift */; };
 		061BE39320171B400057B6FE /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061BE39220171B400057B6FE /* MainPresenter.swift */; };
 		061BE39620171C760057B6FE /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061BE39520171C760057B6FE /* MainModel.swift */; };
+		06665700201723CB00D114AF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066656FF201723CB00D114AF /* MainView.swift */; };
+		06665703201724C100D114AF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06665702201724C100D114AF /* BaseView.swift */; };
+		0666570520172A3D00D114AF /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0666570420172A3D00D114AF /* BaseController.swift */; };
+		06DBF69C201734DA0037C200 /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DBF69B201734DA0037C200 /* ApiServices.swift */; };
 		06E1EF7E1FF3662A00655FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E1EF7D1FF3662A00655FA6 /* AppDelegate.swift */; };
 		06E1EF801FF3662A00655FA6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E1EF7F1FF3662A00655FA6 /* MainController.swift */; };
 		06E1EF831FF3662A00655FA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E1EF811FF3662A00655FA6 /* Main.storyboard */; };
@@ -43,6 +47,10 @@
 		061BE39020171B0E0057B6FE /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
 		061BE39220171B400057B6FE /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		061BE39520171C760057B6FE /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		066656FF201723CB00D114AF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		06665702201724C100D114AF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		0666570420172A3D00D114AF /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		06DBF69B201734DA0037C200 /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
 		06E1EF7A1FF3662A00655FA6 /* whotIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whotIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E1EF7D1FF3662A00655FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06E1EF7F1FF3662A00655FA6 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -111,6 +119,23 @@
 			path = data;
 			sourceTree = "<group>";
 		};
+		06665701201724B000D114AF /* base */ = {
+			isa = PBXGroup;
+			children = (
+				06665702201724C100D114AF /* BaseView.swift */,
+				0666570420172A3D00D114AF /* BaseController.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		0666570620172ECF00D114AF /* api */ = {
+			isa = PBXGroup;
+			children = (
+				06DBF69B201734DA0037C200 /* ApiServices.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
 		06E1EF711FF3662A00655FA6 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +161,8 @@
 		06E1EF7C1FF3662A00655FA6 /* whotIOS */ = {
 			isa = PBXGroup;
 			children = (
+				0666570620172ECF00D114AF /* api */,
+				06665701201724B000D114AF /* base */,
 				061BE39420171C680057B6FE /* data */,
 				061BE38F20171AF70057B6FE /* util */,
 				06E1EFAB1FF3663000655FA6 /* ui */,
@@ -179,6 +206,7 @@
 				06E1EF7F1FF3662A00655FA6 /* MainController.swift */,
 				06E1EF811FF3662A00655FA6 /* Main.storyboard */,
 				061BE39220171B400057B6FE /* MainPresenter.swift */,
+				066656FF201723CB00D114AF /* MainView.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -384,6 +412,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-whotIOS/Pods-whotIOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -393,6 +422,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -517,9 +547,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				06E1EF801FF3662A00655FA6 /* MainController.swift in Sources */,
+				06665700201723CB00D114AF /* MainView.swift in Sources */,
 				061BE39120171B0E0057B6FE /* CommonUtils.swift in Sources */,
 				06E1EF7E1FF3662A00655FA6 /* AppDelegate.swift in Sources */,
+				06665703201724C100D114AF /* BaseView.swift in Sources */,
 				061BE39620171C760057B6FE /* MainModel.swift in Sources */,
+				06DBF69C201734DA0037C200 /* ApiServices.swift in Sources */,
+				0666570520172A3D00D114AF /* BaseController.swift in Sources */,
 				061BE39320171B400057B6FE /* MainPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

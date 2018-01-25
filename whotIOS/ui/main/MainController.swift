@@ -8,18 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class MainController: BaseController , MainView{
+    
+    private let presenter = MainPresenter()
+    
+    func onRefreshView() {
+        //
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func getPost(carts: [MainModel]) {
+        //
     }
-
-
+    
+    func onLoginClick() {
+        //
+    }
 }
 

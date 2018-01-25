@@ -6,4 +6,20 @@
 //  Copyright © 2018年 Whot inc. All rights reserved.
 //
 
-import Foundation
+class MainPresenter{
+    var view: MainView!
+    
+    func attachView(view: MainView) {
+    self.view = view
+    }
+    
+    func detachView() {
+    self.view = nil
+    }
+    
+    func fetchData() {
+        view.showLoading()
+        
+    }
+}
+

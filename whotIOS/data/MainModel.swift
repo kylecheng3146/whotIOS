@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct MainModel {
+    let id: String
+    let name: String
+}
