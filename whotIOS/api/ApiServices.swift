@@ -8,8 +8,8 @@
 
 
 import RxSwift
-import ObjectMapper
+import Moya
 
-class UserService {
+class ApiServices {
     
 }

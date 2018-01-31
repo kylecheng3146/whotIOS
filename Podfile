@@ -5,14 +5,15 @@ target 'whotIOS' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-    pod 'RxSwift',     '~> 4.0'
-    pod 'RxCocoa',     '~> 4.0'
-    pod 'Moya',        '~> 10.0'
-    pod 'Toast-Swift', '~> 3.0.1'
-    pod 'ObjectMapper','~> 3.1'
-
+    #基於Alamofire的網絡抽象層
+    pod 'ObjectMapper'
+    pod 'RxCocoa'
+    pod 'Moya/RxSwift'
+    #JSON 解析
+    pod 'SwiftyJSON'
+    #類似Android toast 工具
+    pod 'Toast-Swift'
   # Pods for whotIOS
-
   target 'whotIOSTests' do
     inherit! :search_paths
     # Pods for testing

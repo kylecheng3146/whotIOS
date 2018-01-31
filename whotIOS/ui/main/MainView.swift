@@ -8,6 +8,6 @@
 
 import Foundation
 protocol MainView : BaseView{
-    func getPost(carts: [MainModel])
+    func getPost(model: MainModel)
     func onLoginClick()
 }

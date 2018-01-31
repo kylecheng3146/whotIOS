@@ -6,9 +6,16 @@
 //  Copyright © 2018年 Whot inc. All rights reserved.
 //
 
-import Foundation
+import ObjectMapper
 
-struct MainModel {
-    let id: String
-    let name: String
+class MainModel: Mappable {
+    var name: String?
+    
+    
+    required init?(map: Map) {
+    }
+    
+    func mapping(map: Map) {
+        name <- map["name"]
+    }
 }

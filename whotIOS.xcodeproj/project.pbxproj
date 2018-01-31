@@ -14,6 +14,7 @@
 		06665703201724C100D114AF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06665702201724C100D114AF /* BaseView.swift */; };
 		0666570520172A3D00D114AF /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0666570420172A3D00D114AF /* BaseController.swift */; };
 		06DBF69C201734DA0037C200 /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DBF69B201734DA0037C200 /* ApiServices.swift */; };
+		06DBF6AB2019B7E60037C200 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DBF6AA2019B7E60037C200 /* ApiManager.swift */; };
 		06E1EF7E1FF3662A00655FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E1EF7D1FF3662A00655FA6 /* AppDelegate.swift */; };
 		06E1EF801FF3662A00655FA6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E1EF7F1FF3662A00655FA6 /* MainController.swift */; };
 		06E1EF831FF3662A00655FA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E1EF811FF3662A00655FA6 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		06665702201724C100D114AF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		0666570420172A3D00D114AF /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		06DBF69B201734DA0037C200 /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
+		06DBF6AA2019B7E60037C200 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		06E1EF7A1FF3662A00655FA6 /* whotIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whotIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E1EF7D1FF3662A00655FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06E1EF7F1FF3662A00655FA6 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				06DBF69B201734DA0037C200 /* ApiServices.swift */,
+				06DBF6AA2019B7E60037C200 /* ApiManager.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -426,6 +430,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +556,7 @@
 				061BE39120171B0E0057B6FE /* CommonUtils.swift in Sources */,
 				06E1EF7E1FF3662A00655FA6 /* AppDelegate.swift in Sources */,
 				06665703201724C100D114AF /* BaseView.swift in Sources */,
+				06DBF6AB2019B7E60037C200 /* ApiManager.swift in Sources */,
 				061BE39620171C760057B6FE /* MainModel.swift in Sources */,
 				06DBF69C201734DA0037C200 /* ApiServices.swift in Sources */,
 				0666570520172A3D00D114AF /* BaseController.swift in Sources */,

@@ -9,9 +9,11 @@
 import UIKit
 class BaseController: UIViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        initView()
     }
     
     override func didReceiveMemoryWarning() {
@@ -20,7 +22,7 @@ class BaseController: UIViewController {
     }
     
     func showLoading() {
-        //
+        CommonUtils.showToast(view: self.view, message: "sdfdfsaadsf")
     }
     
     func hideLoading() {
@@ -30,4 +32,6 @@ class BaseController: UIViewController {
     func showMessage(message: String) {
         CommonUtils.showToast(view: self.view, message: message)
     }
+    
+    func initView(){}
 }

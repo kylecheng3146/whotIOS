@@ -7,21 +7,36 @@
 //
 
 import UIKit
+import Moya
+import RxSwift
 
 class MainController: BaseController , MainView{
     
+    @IBOutlet var btn: UIButton!
+    
     private let presenter = MainPresenter()
+    
+    override func initView() {
+        
+        presenter.attachView(view: self)
+        btn.addTarget(
+            self,
+            action: #selector(onLoginClick),
+            for: .touchUpInside)
+    }
     
     func onRefreshView() {
         //
     }
     
-    func getPost(carts: [MainModel]) {
-        //
+    func getPost(model: MainModel) {
+        
+        print(model.name! as String)
     }
     
-    func onLoginClick() {
-        //
+    @objc func onLoginClick() {
+    
+        presenter.fetchData()
     }
 }
 
