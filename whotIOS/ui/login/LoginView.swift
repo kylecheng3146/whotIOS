@@ -7,7 +7,7 @@
 //
 
 import Foundation
-protocol MainView : BaseView{
-    func getPost(model: MainModel)
+protocol LoginView : BaseView{
+    func getPost(model: LoginModel)
     func onLoginClick()
 }

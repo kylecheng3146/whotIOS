@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-class MainModel: Mappable {
+class LoginModel: Mappable {
     var name: String?
     
     

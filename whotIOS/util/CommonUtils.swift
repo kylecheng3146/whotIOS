@@ -60,8 +60,8 @@ class CommonUtils {
     }
     
     /**
-     * show alert with text field
-     * @param title [alert title]
+     * show alert with text fieldq
+     * @param title [alert tif f f f f ftle]
      * @param message [alert message]
      * @param setTextField [add text field]
      * @param setCancel [cancel button]
@@ -130,6 +130,13 @@ class CommonUtils {
             }
         }
         return nil
+    }
+    
+    /**
+     * next page no parameter
+     */
+    static func nextView(name : String , controller : String) -> UIViewController{
+        return UIStoryboard(name: name, bundle: nil).instantiateViewController(withIdentifier: controller) as UIViewController
     }
 }
 

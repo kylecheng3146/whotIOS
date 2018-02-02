@@ -2,7 +2,7 @@
 //  MainPresenter.swift
 //  whotIOS
 //
-//  Created by Sapido on 2018/1/23.
+//  Created by Sapido on 2018/2/2.
 //  Copyright © 2018年 Whot inc. All rights reserved.
 //
 import RxSwift
@@ -15,11 +15,11 @@ class MainPresenter{
     private let provider = MoyaProvider<ApiManager>()
     
     func attachView(view: MainView) {
-    self.view = view
+        self.view = view
     }
-
+    
     func detachView() {
-    self.view = nil
+        self.view = nil
     }
     
     func fetchData() {
@@ -29,9 +29,9 @@ class MainPresenter{
             .subscribe({ event in
                 switch event {
                 case .success(let response):
-                    let model = Mapper<MainModel>().map(JSON: response as! [String : Any])!
+                    let model = Mapper<LoginModel>().map(JSON: response as! [String : Any])!
                     self.view.getPost(model: model)
-                    self.detachView()
+                    self.view.hideLoading()
                 case .error(let error):
                     // handle the error
                     print(error)
@@ -39,4 +39,5 @@ class MainPresenter{
             })
     }
 }
+
 

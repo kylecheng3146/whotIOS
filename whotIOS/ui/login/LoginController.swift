@@ -10,11 +10,11 @@ import UIKit
 import Moya
 import RxSwift
 
-class MainController: BaseController , MainView{
+class LoginController: BaseController , LoginView{
     
     @IBOutlet var btn: UIButton!
     
-    private let presenter = MainPresenter()
+    private let presenter = LoginPresenter()
     
     override func initView() {
         
@@ -22,16 +22,21 @@ class MainController: BaseController , MainView{
         btn.addTarget(
             self,
             action: #selector(onLoginClick),
-            for: .touchUpInside)
+            for: .touchUpInside
+        )
+        //設定按鈕為無色、邊框
+        btn.backgroundColor = .clear
+        btn.layer.cornerRadius = 5
+        btn.layer.borderWidth = 1
+        btn.layer.borderColor = UIColor.black.cgColor
     }
     
     func onRefreshView() {
         //
     }
     
-    func getPost(model: MainModel) {
-        
-        print(model.name! as String)
+    func getPost(model: LoginModel) {
+        present(CommonUtils.nextView(name: "Main", controller: "MainController"), animated: true, completion: nil)
     }
     
     @objc func onLoginClick() {
