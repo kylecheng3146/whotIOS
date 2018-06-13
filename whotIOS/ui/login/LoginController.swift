@@ -28,7 +28,9 @@ class LoginController: BaseController , LoginView{
         btn.backgroundColor = .clear
         btn.layer.cornerRadius = 5
         btn.layer.borderWidth = 1
-        btn.layer.borderColor = UIColor.black.cgColor
+        btn.layer.borderColor = UIColor.gray.cgColor
+        btn.setBackgroundColor(color: UIColor.gray, forState: .highlighted)
+        
     }
     
     func onRefreshView() {
@@ -40,7 +42,6 @@ class LoginController: BaseController , LoginView{
     }
     
     @objc func onLoginClick() {
-    
         presenter.fetchData()
     }
 }

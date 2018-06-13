@@ -14,13 +14,13 @@ enum ApiManager {
 
 extension ApiManager : TargetType{
     var baseURL: URL {
-        return URL(string: "https://script.google.com/")!
+        return URL(string: "https://api.instagram.com/")!
     }
     
     var path: String {
         switch self {
         case .login:
-            return "macros/s/AKfycbxxgTSWXbEiX8EHBSWrt6PVDnMAfmM3FLYDAhy-cqgDTRVY6hA/exec"
+            return "v1/users/self/?access_token=315272341.7fb3c50.8d63aaf6d07943238abac3a1b0866c16"
         }
     }
     

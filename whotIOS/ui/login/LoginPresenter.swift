@@ -31,11 +31,11 @@ class LoginPresenter{
                 case .success(let response):
                     let model = Mapper<LoginModel>().map(JSON: response as! [String : Any])!
                     self.view.getPost(model: model)
-                    self.view.hideLoading()
                 case .error(let error):
                     // handle the error
-                    print(error)
+                    self.view.showMessage(message: "連線錯誤:\(error)")
                 }
+                self.view.hideLoading()
             })
     }
 }
