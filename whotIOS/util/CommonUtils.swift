@@ -7,6 +7,7 @@
 
 import Foundation
 import Toast_Swift
+import TTGSnackbar
 
 class CommonUtils {
     
@@ -43,7 +44,7 @@ class CommonUtils {
             fatalError("keyWindow has no rootViewController")
         }
         //dismiss all alert
-        viewController.dismiss(animated: true, completion: nil)
+        //        viewController.dismiss(animated: true, completion: nil)
         // 建立一個提示框
         alertController = UIAlertController(title: "提示", message: message, preferredStyle: .alert)
         // 建立[確認]按鈕
@@ -59,13 +60,56 @@ class CommonUtils {
         viewController.present(alertController, animated: true, completion: nil)
     }
     
-    /**
-     * show alert with text fieldq
-     * @param title [alert tif f f f f ftle]
+    static func showSnackBar(message: String){
+        let snackbar = TTGSnackbar(message: message, duration: .middle)
+        snackbar.show()
+    }
+    
+    /*
+     * show alert with multiple button
+     * @param title [alert title]
      * @param message [alert message]
      * @param setTextField [add text field]
      * @param setCancel [cancel button]
      */
+    
+    static func showAlertWithMultipleButton(alertController : UIAlertController , setCancel:Bool, handler: @escaping (String) -> ()){
+        guard let viewController = UIApplication.shared.keyWindow?.rootViewController else {
+            fatalError("keyWindow has no rootViewController")
+        }
+        //dismiss alert
+        alertController.dismiss(animated: true, completion: nil)
+        
+        //check if you need cancel button
+        if(setCancel){
+            //set cancel
+            alertController.addAction(UIAlertAction(title: "取消", style: .cancel,  handler: {   (action: UIAlertAction!) -> Void in
+                alertController.dismiss(animated: true, completion: nil)
+            }))
+        }
+        
+        //clicks OK.
+        alertController.addAction(UIAlertAction(title: "內設定", style: .default, handler: {   (action: UIAlertAction!) -> Void in
+            handler("0")
+        }))
+        
+        //clicks OK.
+        alertController.addAction(UIAlertAction(title: "外設定", style: .default, handler: {   (action: UIAlertAction!) -> Void in
+            handler("1")
+        }))
+        
+        // 4. Present the alert.
+        viewController.present(alertController, animated: true, completion: nil)
+    }
+    
+    /*
+     * show alert with text field
+     * @param title [alert title]
+     * @param message [alert message]
+     * @param setTextField [add text field]
+     * @param setCancel [cancel button]
+     */
+    
     static func showAlertWithEvent(alertController : UIAlertController , setTextField:Bool , setCancel:Bool, handler: @escaping () -> ()){
         guard let viewController = UIApplication.shared.keyWindow?.rootViewController else {
             fatalError("keyWindow has no rootViewController")
@@ -76,19 +120,19 @@ class CommonUtils {
         if(setTextField){
             alertController.addTextField { (textField) in
                 //set text type is pwd
-                textField.isSecureTextEntry = true
+                textField.isSecureTextEntry = false
             }
         }
         //check if you need cancel button
         if(setCancel){
             //set cancel
-            alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel,  handler: {   (action: UIAlertAction!) -> Void in
+            alertController.addAction(UIAlertAction(title: "取消", style: .cancel,  handler: {   (action: UIAlertAction!) -> Void in
                 alertController.dismiss(animated: true, completion: nil)
             }))
         }
         
         //clicks OK.
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: {   (action: UIAlertAction!) -> Void in
+        alertController.addAction(UIAlertAction(title: "確認", style: .default, handler: {   (action: UIAlertAction!) -> Void in
             handler()
         }))
         
@@ -96,12 +140,12 @@ class CommonUtils {
         viewController.present(alertController, animated: true, completion: nil)
     }
     
-    /**
-     * 檢查欄位是否有填入值
-     */
+    //檢查欄位
     static func checkTextFieldIsBlank(sender : UITextField!,view : UIView ,message : String!) -> Bool{
         if sender.text == "" {
+            //提醒視窗
             self.showToast(view: view, message: message)
+            //            self.showAlert(message: message, doPrev: false)
             return true
         }
         return false

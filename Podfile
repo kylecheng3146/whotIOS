@@ -7,19 +7,21 @@ target 'whotIOS' do
     #beautiful textfield
     pod 'TextFieldEffects'
     #基於Alamofire的網絡抽象層
-    pod 'ObjectMapper'
+    pod 'ObjectMapper', '~> 3.3'
     pod 'RxCocoa'
     pod 'Moya/RxSwift'
     #JSON 解析
     pod 'SwiftyJSON'
     #類似Android toast 工具
     pod 'Toast-Swift'
+    #置底訊息列
+    pod 'TTGSnackbar'
     # Pods for whotIOS
     target 'whotIOSTests' do
         inherit! :search_paths
         # Pods for testing
-        pod 'RxBlocking', '~> 4.0'
-        pod 'RxTest',     '~> 4.0'
+        pod 'RxBlocking'
+        pod 'RxTest'
     end
     
     target 'whotIOSUITests' do
